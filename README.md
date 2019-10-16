@@ -8,7 +8,13 @@ Terraform provider for [Sentry](https://sentry.io).
 
 See the [the Provider Configuration page of the Terraform documentation](https://www.terraform.io/docs/configuration/providers.html#third-party-plugins) for instructions.
 
-Pre-compiled binaries are available from the [Releases](https://github.com/jianyuan/terraform-provider-sentry/releases) page.
+To compile the plugin use this command:
+```
+For macOS:
+env GOOS=darwin GOARCH=amd64 go build -o terraform-provider-sentry
+For linux:
+env GOOS=linux GOARCH=amd64 go build -o terraform-provider-sentry
+```
 
 ## Usage
 
